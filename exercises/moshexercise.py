@@ -1,0 +1,19 @@
+from pprint import pprint
+sentence = "this is a common interview question"
+
+char_frequency = {}
+for char in sentence:
+    if char in char_frequency:
+        char_frequency[char] += 1
+    else:
+        char_frequency[char] = 1
+pprint(char_frequency,width=1)
+
+print(sorted(char_frequency.items(), key=lambda kv:kv[1],reverse=True))
+
+char_frequency_sorted = sorted(
+    char_frequency.items(),
+    key=lambda kv:kv[1],
+    reverse=True)
+    
+print("\n most frequency item is ",char_frequency_sorted[0])
