@@ -1,3 +1,20 @@
+"""
+Explanation:
+
+In the below code, we have overloaded the built-in method __add__ (line 6) and __sub__ (line 10) that are invoked when the + and the - operators are used.
+
+Whenever two objects of class Com are added using the + operator, the overloaded __add__ method is called.
+
+This method adds the real property separately and the imag property separately and then returns a new Com class object that is initialized by these sums.
+
+Note that __add__ and __sub__ methods have two input parameters. The first one is self, which we know is the reference to the class itself. The second parameter is other. other is a reference to the other objects that are interacting with the class object.
+
+In line 18, obj2 will be considered the other object, the operator will be called on the obj1 object, and the returned object will be stored in obj3.
+
+In line 19, obj2 will be considered the other object, the operator will be called on the obj1 object, and the returned object will be stored in obj4.
+
+Other has Com class attributes and thus, it has the real and imag properties.
+"""
 class Com:
     def __init__(self, real=0, imag=0):
         self.real = real
