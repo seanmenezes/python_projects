@@ -14,6 +14,15 @@ In line 18, obj2 will be considered the other object, the operator will be calle
 In line 19, obj2 will be considered the other object, the operator will be called on the obj1 object, and the returned object will be stored in obj4.
 
 Other has Com class attributes and thus, it has the real and imag properties.
+
+Operator	Method
++	__add__ (self, other)
+-	__sub__ (self, other)
+/	__truediv__ (self, other)
+*	__mul__ (self, other)
+<	__lt__ (self, other)
+>	__gt__ (self, other)
+==	__eq__ (self, other)
 """
 class Com:
     def __init__(self, real=0, imag=0):
